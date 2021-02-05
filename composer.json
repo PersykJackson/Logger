@@ -13,5 +13,6 @@
             "Liloy\\Logger\\" : "/",
             "Liloy\\Logger\\Exceptions\\" : "/Exceptions/"
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
