@@ -1,0 +1,17 @@
+{
+    "name": "liloy/logger",
+    "description": "Just psr-3 logger",
+    "authors": [
+        {
+            "name": "Zagidullin Vladislav",
+            "email": "persyk32111@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Liloy\\Logger\\" : "/",
+            "Liloy\\Logger\\Exceptions\\" : "/Exceptions/"
+        }
+    }
+}
