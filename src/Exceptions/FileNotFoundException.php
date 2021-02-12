@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Liloy\Logger\Exceptions;
+namespace Liloy\Exceptions;
 
 
 class FileNotFoundException extends \Exception
