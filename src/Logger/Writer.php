@@ -4,7 +4,7 @@
 namespace Liloy\Logger;
 
 
-use Liloy\Logger\Exceptions\FileNotFoundException;
+use Liloy\Exceptions\FileNotFoundException;
 
 class Writer
 {

@@ -6,9 +6,30 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitd94e0d640b1a66042be818711b4df4e4
 {
+    public static $prefixLengthsPsr4 = array (
+        'L' => 
+        array (
+            'Liloy\\Logger\\' => 13,
+            'Liloy\\Exceptions\\' => 17,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Liloy\\Logger\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Logger',
+        ),
+        'Liloy\\Exceptions\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Exceptions',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd94e0d640b1a66042be818711b4df4e4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd94e0d640b1a66042be818711b4df4e4::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
