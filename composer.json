@@ -10,8 +10,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Liloy\\Logger\\" : "/",
-            "Liloy\\Logger\\Exceptions\\" : "/Exceptions/"
+            "Liloy\\Logger\\" : "src/Logger/",
+            "Liloy\\Exceptions\\" : "src/Exceptions/"
         }
     },
     "minimum-stability": "stable"
