@@ -5,9 +5,9 @@ namespace Liloy\Logger;
 class Logger implements LoggerInterface
 {
     private Writer $writer;
-    public function __construct(string $file)
+    public function __construct(string $filePath)
     {
-        $this->writer = new Writer($file);
+        $this->writer = new Writer($filePath);
     }
     public function emergency($message, array $context = [])
     {
